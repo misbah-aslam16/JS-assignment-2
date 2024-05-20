@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <script>
+
+        /*--------------Question no 1 & 2------------------*/
+
+        var a = +prompt("Enter 1st number : ");
+        var b = +prompt("Enter 2nd number : ");
+        var add = a + b;
+        var sub = a - b;
+        var mul = a * b;
+        var div = a / b;
+        var mod = a % b;
+
+        document.write("<h1>" + "Addition" + "</h1>");
+        document.write("\nThe sum of  " + a + " and " + b + " is : " + add);
+
+        document.write("<hr><h1>" + "Subtraction" + "</h1>");
+        document.write("\nThe difference of  " + a + " and " + b + " is : " + sub);
+
+        document.write("<hr><h1>" + "Multiplication" + "</h1>");
+        document.write("\nThe multiplication of  " + a + " and " + b + " is : " + mul);
+
+        document.write("<hr><h1>" + "Division" + "</h1>");
+        document.write("\nDivision sum of  " + a + " and " + b + " is : " + div);
+
+        document.write("<hr><h1>" + "Modulus" + "</h1>");
+        document.write("\nThe modulus of  " + a + " and " + b + " is : " + mod);
+
+
+
+        /*----------------------Question no 3-------------------------*/
+
+
+        document.write("<h1>" + "Mathematical operations" + "<hr></h1>");
+
+        var a;
+        document.write("Value after variable declaration is : " + a);
+        a = 10;
+
+        document.write("<br>Initial value : " + a);
+        a++;
+
+        document.write("<br>Value after increment is : ", a);
+        a = a + 7;
+
+        document.write("<br>Value after add 7 is : ", a);
+        a--;
+
+        document.write("<br>Value after decrement is : ", a);
+
+        document.write("<br>Output : The remainder is : ", a % 3);
+
+
+        /*------------------------Question no 4--------------------------*/
+
+        var ticketPrize = 600;
+        var noOfTicket = 5;
+        var total = ticketPrize * noOfTicket;
+
+        document.write("<h1>" + "Movie Ticket" + "<hr></h1>");
+        document.write("Total Cost to buy " + noOfTicket + " tickets to a movie is " + total + "PKR.");
+
+        /*--------------------------Question no 5--------------------------*/
+
+        document.write("<h1>Multiplication Table" + "<hr></h1>");
+
+        var num = +prompt("Enter any number to display a Table : ");
+        var i;
+
+        for (i = 1; i <= 10; i++) {
+            document.write(num, "  X ", i, " = ", num * i, "<br>");
+        }
+
+        /*--------------------------Question no 6---------------------------*/
+
+        document.write("<h1>The Temperature Converter" + "<hr></h1>");
+
+        //--------------Fahrenheit to Celsius-------------//
+
+        var fahrenheit = +prompt("Enter temperature in Fahrenheit:");
+        var celsius = (fahrenheit - 32) * 5 / 9;
+        document.write(fahrenheit + " is " + celsius + "<br>");
+
+        //--------------Celcius to Fahrenheit-------------//
+
+        var celsius = +prompt("Enter temperature in celsius:");
+        var fahrenheit = (celsius * 9 / 5) + 32
+        document.write(celsius + " is " + fahrenheit + "<br>");
+
+        /*------------------------------Question no 7---------------------------*/
+
+        document.write("<h1>Shopping Cart" + "<hr></h1>");
+
+        var item_one = 650;
+        var quantityOfItemOne = 3;
+        var item_two = 100;
+        var quantityOfItemTwo = 7;
+        var total_cost = item_one * quantityOfItemOne + item_two * quantityOfItemTwo
+
+        document.write("Prize of Item 1 is " + item_one + "<br>");
+        document.write("Quantity of Item 1 is " + quantityOfItemOne + "<br>");
+
+        document.write("Prize of Item 2 is " + item_two + "<br>");
+        document.write("Quantity of Item 2 is " + quantityOfItemTwo + "<br>");
+        document.write("Total Cost of your order is " + total_cost + "<br>");
+
+
+        /*------------------------------Question no 8---------------------------*/
+
+        var totalmarks = 500;
+        var marksobtained = 379;
+        var percentage = (marksobtained / totalmarks) * 100;
+
+
+        document.writeln("<h1> MarkSheet" + "<hr></h1>");
+        document.writeln("Total marks is: " + totalmarks + "<br>");
+        document.writeln("Marks Obtained: " + marksobtained + "<br>");
+        document.writeln("Your Percentage is: " + percentage + "%<br>");
+
+        /*------------------------------Question no 9---------------------------*/
+
+        var usDollars = 10;
+        var saudiRiyals = 25;
+        var exchangeRateUSDToPKR = 104.80;
+        var exchangeRateSARToPKR = 28.00;
+        var totalPKR = (usDollars * exchangeRateUSDToPKR) + (saudiRiyals * exchangeRateSARToPKR);
+        document.writeln("<h1> Currency in PKR" + "<hr></h1>");
+        document.writeln("Total Currency in PKR: " + totalPKR + "<br> <br>");
+
+        /*------------------------------Question no 10---------------------------*/
+
+        var numberr = 4;
+        var result = (((numberr + 5) * 10) / 2);
+        document.writeln("<h1> Perform all calculation in a single expression" + "<hr></h1>");
+        document.writeln("Result is: " + result + "<br> <br>");
+
+
+        /*------------------------------Question no 11---------------------------*/
+        var currentYear = 2024;
+        var birthYear = +prompt("Enter Your Birth Year");
+        var yourAge = currentYear - birthYear;
+        document.writeln("<h1>AGE CALCULATOR<hr></h1>");
+        document.writeln("Your Age is: " + yourAge);
+
+
+        /*------------------------------Question no 12---------------------------*/
+
+        var radius = 10;
+        var circumference = 2 * 3.142 * radius;
+        document.writeln("<h1>The Geometrizer<hr></h1>");
+        document.writeln("Radius of circle is: " + radius  + "<br>");
+        document.writeln("Circumference of circle is: " + circumference + "<br>");
+        var area = 3.142 * radius * radius;
+        document.writeln("Area of circle is: " + area);
+
+        /*------------------------------Question no 13---------------------------*/
+
+
+        var favouriteSnakee = "Chocolate Chip";
+        var currentAge = 19;
+        var maxAge = 65;
+        var estimateAmount = 3;
+        var yearsRemaining = maxAge - currentAge;
+        var daysRemaining = yearsRemaining * 365;
+        var totalSnacks = daysRemaining * estimateAmount;
+        document.writeln("<h1>The life time Supply Calculator <hr></h1>");
+        document.writeln("My favourite snack is: " + favouriteSnakee + "<br>");
+        document.writeln("My Current age is: " + currentAge + "<br>");
+        document.writeln("Maximum age is: " + maxAge + "<br>");
+        document.writeln("Amount of  snack per day: " + estimateAmount + "<br>");
+        document.writeln("You will need : " + totalSnacks + " " + favouriteSnakee + "  you last to until the ripe old age of " + maxAge + "<br>");
+    </script>
+</body>
+
+</html>
